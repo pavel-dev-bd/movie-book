@@ -1,8 +1,15 @@
 {
   "files": {
-    "main.css": "/movie-book/static/css/main.b77b5f0b.css",
-    "main.js": "/movie-book/static/js/main.f7d2a775.js",
-    "static/media/boxicons.svg": "/movie-book/static/media/boxicons.045b05bf2dc119267a90.svg",
+    "main.css": "/movie-book/static/css/main.2591af80.css",
+    "main.js": "/movie-book/static/js/main.76e2dff5.js",
+    "static/css/74.b61602a2.chunk.css": "/movie-book/static/css/74.b61602a2.chunk.css",
+    "static/js/74.13e6d07b.chunk.js": "/movie-book/static/js/74.13e6d07b.chunk.js",
+    "static/css/75.3f6fb286.chunk.css": "/movie-book/static/css/75.3f6fb286.chunk.css",
+    "static/js/75.0b50a5b4.chunk.js": "/movie-book/static/js/75.0b50a5b4.chunk.js",
+    "static/css/674.12cd0514.chunk.css": "/movie-book/static/css/674.12cd0514.chunk.css",
+    "static/js/674.78155f11.chunk.js": "/movie-book/static/js/674.78155f11.chunk.js",
+    "static/js/823.2c8d9839.chunk.js": "/movie-book/static/js/823.2c8d9839.chunk.js",
+    "static/media/boxicons.svg": "/movie-book/static/media/boxicons.c17adb11d64fadd1cd5a.svg",
     "static/media/footer-bg.jpg": "/movie-book/static/media/footer-bg.67e95f05e76a8cebf7e2.jpg",
     "static/media/logo.png": "/movie-book/static/media/logo.d86a2187541376233d72.png",
     "static/media/boxicons.eot": "/movie-book/static/media/boxicons.092b78589f3f53e60030.eot",
@@ -10,11 +17,18 @@
     "static/media/boxicons.ttf": "/movie-book/static/media/boxicons.cbd149c55e2396cb52e7.ttf",
     "static/media/boxicons.woff2": "/movie-book/static/media/boxicons.8d765747a5588f36ff61.woff2",
     "index.html": "/movie-book/index.html",
-    "main.b77b5f0b.css.map": "/movie-book/static/css/main.b77b5f0b.css.map",
-    "main.f7d2a775.js.map": "/movie-book/static/js/main.f7d2a775.js.map"
+    "main.2591af80.css.map": "/movie-book/static/css/main.2591af80.css.map",
+    "main.76e2dff5.js.map": "/movie-book/static/js/main.76e2dff5.js.map",
+    "74.b61602a2.chunk.css.map": "/movie-book/static/css/74.b61602a2.chunk.css.map",
+    "74.13e6d07b.chunk.js.map": "/movie-book/static/js/74.13e6d07b.chunk.js.map",
+    "75.3f6fb286.chunk.css.map": "/movie-book/static/css/75.3f6fb286.chunk.css.map",
+    "75.0b50a5b4.chunk.js.map": "/movie-book/static/js/75.0b50a5b4.chunk.js.map",
+    "674.12cd0514.chunk.css.map": "/movie-book/static/css/674.12cd0514.chunk.css.map",
+    "674.78155f11.chunk.js.map": "/movie-book/static/js/674.78155f11.chunk.js.map",
+    "823.2c8d9839.chunk.js.map": "/movie-book/static/js/823.2c8d9839.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b77b5f0b.css",
-    "static/js/main.f7d2a775.js"
+    "static/css/main.2591af80.css",
+    "static/js/main.76e2dff5.js"
   ]
 }
