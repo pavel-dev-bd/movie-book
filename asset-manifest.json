@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/movie-book/static/css/main.2591af80.css",
-    "main.js": "/movie-book/static/js/main.76e2dff5.js",
+    "main.css": "/movie-book/static/css/main.ba4aeaef.css",
+    "main.js": "/movie-book/static/js/main.20b2e017.js",
     "static/css/74.b61602a2.chunk.css": "/movie-book/static/css/74.b61602a2.chunk.css",
     "static/js/74.13e6d07b.chunk.js": "/movie-book/static/js/74.13e6d07b.chunk.js",
     "static/css/75.3f6fb286.chunk.css": "/movie-book/static/css/75.3f6fb286.chunk.css",
-    "static/js/75.0b50a5b4.chunk.js": "/movie-book/static/js/75.0b50a5b4.chunk.js",
+    "static/js/75.f7bc8e6a.chunk.js": "/movie-book/static/js/75.f7bc8e6a.chunk.js",
     "static/css/674.12cd0514.chunk.css": "/movie-book/static/css/674.12cd0514.chunk.css",
     "static/js/674.78155f11.chunk.js": "/movie-book/static/js/674.78155f11.chunk.js",
     "static/js/823.2c8d9839.chunk.js": "/movie-book/static/js/823.2c8d9839.chunk.js",
@@ -17,18 +17,18 @@
     "static/media/boxicons.ttf": "/movie-book/static/media/boxicons.cbd149c55e2396cb52e7.ttf",
     "static/media/boxicons.woff2": "/movie-book/static/media/boxicons.8d765747a5588f36ff61.woff2",
     "index.html": "/movie-book/index.html",
-    "main.2591af80.css.map": "/movie-book/static/css/main.2591af80.css.map",
-    "main.76e2dff5.js.map": "/movie-book/static/js/main.76e2dff5.js.map",
+    "main.ba4aeaef.css.map": "/movie-book/static/css/main.ba4aeaef.css.map",
+    "main.20b2e017.js.map": "/movie-book/static/js/main.20b2e017.js.map",
     "74.b61602a2.chunk.css.map": "/movie-book/static/css/74.b61602a2.chunk.css.map",
     "74.13e6d07b.chunk.js.map": "/movie-book/static/js/74.13e6d07b.chunk.js.map",
     "75.3f6fb286.chunk.css.map": "/movie-book/static/css/75.3f6fb286.chunk.css.map",
-    "75.0b50a5b4.chunk.js.map": "/movie-book/static/js/75.0b50a5b4.chunk.js.map",
+    "75.f7bc8e6a.chunk.js.map": "/movie-book/static/js/75.f7bc8e6a.chunk.js.map",
     "674.12cd0514.chunk.css.map": "/movie-book/static/css/674.12cd0514.chunk.css.map",
     "674.78155f11.chunk.js.map": "/movie-book/static/js/674.78155f11.chunk.js.map",
     "823.2c8d9839.chunk.js.map": "/movie-book/static/js/823.2c8d9839.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2591af80.css",
-    "static/js/main.76e2dff5.js"
+    "static/css/main.ba4aeaef.css",
+    "static/js/main.20b2e017.js"
   ]
 }
