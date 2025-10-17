@@ -1,0 +1,32 @@
+
+@use "../../scss/" as *;
+.movie-search {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+
+  input {
+    width: 100%;
+    padding-right: 8rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    @include mobile {
+      padding-right: 5rem;
+ 
+    }
+    
+  }
+
+  button {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    @include mobile {
+      right: 10px;
+      top: 10px;
+    }
+  }
+}

@@ -1,42 +1,161 @@
 @use "../../scss/" as *;
 
-.footer {
+// .footer {
+//   position: relative;
+//   padding: 6rem 2rem;
+//   background-position: top;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+
+//   &__content {
+//     max-width: 1000px;
+
+//     &__logo {
+//       @include flex(center, center);
+
+//       margin-bottom: 3rem;
+//       a{font-family: 28px;}
+//     }
+
+//     &__menus {
+//       display: grid;
+//       grid-template-columns: repeat(3, 1fr);
+
+//       @include mobile {
+//         grid-template-columns: repeat(2, 1fr);
+//       }
+//     }
+
+//     &__menu {
+//       @include flex(flex-start, flex-start);
+
+//       flex-direction: column;
+//       margin-top: 1rem;
+//       font-size: 1.5rem;
+//       font-weight: 600;
+
+//       & > * ~ * {
+//         margin-top: 1rem;
+//       }
+//     }
+//   }
+// }
+
+// ...existing code...
+$bg: #0b0d0f;
+$text: #dbe7ee;
+$muted: rgba(219,231,238,0.65);
+$accent: #6a9eff;
+$max-width: 1200px;
+
+.site-footer {
+  background: linear-gradient(180deg, #070809, $bg);
+  color: $text;
   position: relative;
   padding: 6rem 2rem;
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
+   @include mobile{
+    padding: 4rem 1rem;}
 
-  &__content {
-    max-width: 1000px;
-
-    &__logo {
-      @include flex(center, center);
-
-      margin-bottom: 3rem;
-      a{font-family: 28px;}
+  .site-footer__inner {
+    max-width: $max-width;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 0 16px;
+    flex-wrap: wrap;
+      @include mobile{
+      justify-content: center;
     }
+  }
 
-    &__menus {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+  &__brand {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
 
-      @include mobile {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    &__menu {
-      @include flex(flex-start, flex-start);
-
-      flex-direction: column;
-      margin-top: 1rem;
-      font-size: 1.5rem;
-      font-weight: 600;
-
-      & > * ~ * {
-        margin-top: 1rem;
+  &__logo {
+    font-weight: 800;
+    font-size: 18px;
+    height: 30px;
+    width: 30px;
+    letter-spacing: 0.4px;
+     @include mobile{
+      .logo {
+        font-size: 16px;
+        justify-content: center !important;
       }
     }
   }
+
+  &__copyright {
+    color: $muted;
+    font-size: 13px;
+  }
+
+  &__dev {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+     @include mobile{
+      text-align: center;
+    }
+  }
+
+  &__devline {
+    font-size: 14px;
+    color: $text;
+  }
+
+  &__devlink {
+    color: $accent;
+    text-decoration: none;
+    font-weight: 600;
+    @include mobile{
+      text-align: center;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+     @include mobile{
+      justify-content: center;
+    }
+  }
+
+  &__contact {
+    color: $muted;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 6px 8px;
+    border-radius: 8px;
+    transition: background .12s ease, transform .08s ease;
+  }
+
+  &__contact:hover {
+    background: rgba(255,255,255,0.02);
+    color: $text;
+    transform: translateY(-1px);
+  }
+
+  // @media (max-width: 720px) {
+  //   .site-footer__inner {
+  //     flex-direction: column;
+  //     align-items: flex-start;
+  //   }
+  //   .site-footer__dev {
+  //     width: 100%;
+  //     text-align: left;
+  //     order: 2;
+  //   }
+  // }
 }
+// ...existing code...

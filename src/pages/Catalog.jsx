@@ -8,14 +8,14 @@ import PageHeader from "../components/page-header/PageHeader";
 import { category as cate } from "./../api/tmdbApi";
 
 const Catalog = () => {
-  const { category } = useParams();
-
-  console.log(category);
+  const { category ,keyword } = useParams();
 
   return (
     <>
       <PageHeader>
-        {category === cate.movie ? "Movies" : "TV Series"}
+        {keyword && 'Search result for: ' + keyword}
+        {category && !keyword &&  <b style={{textTransform:"uppercase"}}>{category}</b>  }
+        {/* {category === cate.movie ? "Movies" : "TV Series"} */}
       </PageHeader>
 
       <div className="container">

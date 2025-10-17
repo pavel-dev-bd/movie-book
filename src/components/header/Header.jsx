@@ -1,29 +1,42 @@
 import React, { useEffect, useRef } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation,useParams } from "react-router-dom";
 
 import "./header.scss";
 
 import logo from "./../../assets/logo.png";
 
 import * as Config from "./../../constants/Config";
+import MovieSearch from "../movie-search/MovieSearch";
+
 
 const headerNav = [
   {
     display: "Home",
-    path: `/${Config.HOME_PAGE}`,
+    path: `${Config.HOME_PAGE}`,
   },
-  {
+   {
     display: "Movies",
-    path: `/${Config.HOME_PAGE}/movie`,
+    path: `/movie`,
   },
   {
     display: "TV Series",
-    path: `/${Config.HOME_PAGE}/tv`,
+    path: `/tv`,
   },
 ];
 
 const Header = () => {
   const { pathname } = useLocation();
+ console.log(pathname);
+ console.log(useLocation());
+ console.log(useParams());
+
+ 
+ 
+ 
+
+  
+ 
+   
   const headerRef = useRef(null);
 
   const active = headerNav.findIndex((e) => e.path === pathname);
@@ -52,9 +65,11 @@ const Header = () => {
       <div className="header__wrap container">
         <div className="logo">
           <img src={logo} alt="logo" />
-          <Link to={`/${Config.HOME_PAGE}`}>{Config.SITE_NAME}</Link>
+          <Link to={`${Config.HOME_PAGE}`}>{Config.SITE_NAME}</Link>
         </div>
-
+        <div>
+          <MovieSearch category={'movie'} />
+        </div>
         <ul className="header__nav">
           {headerNav.map((e, i) => (
             <li key={i} className={`${i === active ? "active" : ""}`}>

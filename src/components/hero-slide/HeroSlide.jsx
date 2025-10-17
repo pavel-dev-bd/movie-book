@@ -11,54 +11,66 @@ import apiConfig from "./../../api/apiConfig";
 
 import "./hero-slide.scss";
 import { useHistory } from "react-router";
-
+import SkeletonLoader from "../SkeletonLoader/SkeletonLoader";
 import * as Config from "./../../constants/Config";
 
 const HeroSlide = () => {
   SwiperCore.use([Autoplay]);
 
   const [movieItems, setMovieItems] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const getMovies = async () => {
       const params = { page: 1 };
       try {
+        //setLoading(true);
         const response = await tmdbApi.getMoviesList(movieType.popular, {
           params,
         });
         setMovieItems(response.results.slice(0, 4));
       } catch {
         console.log("error");
+      } finally {
+       // setLoading(false);
       }
     };
     getMovies();
   }, []);
 
   return (
-    <div className="hero-slide">
-      <Swiper
-        modules={[Autoplay]}
-        grabCursor={true}
-        spaceBetween={0}
-        slidesPerView={1}
-        autoplay={{ delay: 5000 }}
-      >
-        {movieItems.map((item, index) => (
-          <SwiperSlide key={index}>
-            {({ isActive }) => (
-              // eslint-disable-next-line jsx-a11y/alt-text
-              <HeroSlideItem
-                item={item}
-                className={`${isActive ? "active" : ""}`}
-              />
-            )}
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      {movieItems.map((item, index) => (
-        <TrailerModal key={index} item={item} />
-      ))}
-    </div>
+    <>
+      {loading ? (
+        <div style={{ marginTop: "150px" }} className="banner-skeleton ">
+          <SkeletonLoader count={1} height={500} style={{ width: "100%" }} />
+        </div>
+      ) : (
+        <div className="hero-slide">
+          <Swiper
+            modules={[Autoplay]}
+            grabCursor={true}
+            spaceBetween={0}
+            slidesPerView={1}
+            autoplay={{ delay: 5000 }}
+          >
+            {movieItems.map((item, index) => (
+              <SwiperSlide key={index}>
+                {({ isActive }) => (
+                  // eslint-disable-next-line jsx-a11y/alt-text
+                  <HeroSlideItem
+                    item={item}
+                    className={`${isActive ? "active" : ""}`}
+                  />
+                )}
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          {movieItems.map((item, index) => (
+            <TrailerModal key={index} item={item} />
+          ))}
+        </div>
+      )}
+    </>
   );
 };
 
@@ -98,11 +110,7 @@ const HeroSlideItem = (props) => {
           <h2 className="title">{item.title}</h2>
           <div className="overview">{item.overview}</div>
           <div className="btns">
-            <Button
-              onClick={() =>
-                history.push(`/${Config.HOME_PAGE}/movie/` + item.id)
-              }
-            >
+            <Button onClick={() => history.push(`/movie/` + item.id)}>
               Watch now
             </Button>
             <OutlineButton onClick={setModalActive}>
